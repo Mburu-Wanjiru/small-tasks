@@ -4,16 +4,37 @@ const poll={
     question:'how do you rate Jim Airport system?',
     options:['0: Genius','1: Exceed Expectation','2: optimum Expectation','3: Above Average'],
     answers: new Array(4).fill(0),
+
+//function for displaying a poll.
+registerNewAnswer(){
+    //get the answer.
+    const answer=Number(prompt(`${this.question}
+    \n${this.options.join('\n')}\n(write option number)`));
+    
+
+console.log(answer);
+//storing the answer
+typeof answer === 'number' && answer <this.answers.length
+ && this.answers[answer]++;
+ 
+this.displayResult();
+this.displayResult('string');
+},
+
+
+displayResult(type='array'){
+    if(type==='array'){
+        console.log(this.answers);
+    }else if(type==='string'){
+        console.log(`poll results are ${this.answers.join(', ')}`);
+    }
+}
 };
 
-/*Create a method called 'registerNewAnswer' on the 'poll' object. The 
-method does 2 things:
-1.1. Display a prompt window for the user to input the number of the 
-selected option. The prompt should look like this:
-What is your favourite programming language?
-0: JavaScript
-1: Python
-2: Rust
-3: C++*/
+document.querySelector('.poll').addEventListener
+('click',poll.registerNewAnswer.bind(poll));
 
-const registerNewAnswer=
+//using this key word in display function outside.
+//points to another method
+poll.displayResult.call({answers:[45,32,56]});
+poll.displayResult.call({answers:[45,32,56]},'string');
