@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FF5722; /* Red */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FF9800; /* Orange */
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #E91E63; /* Pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    margin: 40px 0;
+}
+
+.service-card {
+    background-color: #795548; /* Brown */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.about {
+    background-color: #FFC107; /* Amber */
+    padding: 40px 20px;
+}
+
+.contact {
+    background-color: #E91E63; /* Pink */
+    color: white;
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #795548; /* Brown */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
