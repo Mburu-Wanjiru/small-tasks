@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
   // Other relevant fields
 });
 
+
 const bookingSchema = new mongoose.Schema({
   userId: mongoose.Types.ObjectId,
   busId: mongoose.Types.ObjectId,
