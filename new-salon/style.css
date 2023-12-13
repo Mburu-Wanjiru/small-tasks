@@ -1,0 +1,42 @@
+/* Add the following styles for products */
+.product {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  
+  /* Add the following styles for the shopping cart */
+  #shoppingCart {
+    margin-top: 10px;
+  }
+  
+  /* Add the following styles for the employee section */
+  .employee {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .employee-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  
+  /* Add the following styles for the image upload section */
+  #imageUpload {
+    margin-top: 10px;
+  }
+  
