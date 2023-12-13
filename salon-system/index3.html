@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Management System</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Salon Management System</h1>
+
+    <div id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="appointments" style="display: none;">
+      <h2>Appointments</h2>
+      <button onclick="logout()">Logout</button>
+
+      <!-- Display appointments here -->
+      <ul id="appointmentsList"></ul>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
