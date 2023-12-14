@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Salon Management System</title>
+ <style>
+    /* Add the following styles for spa services and haircuts for boys */
+#servicesForGirls,
+#haircutsForBoys {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#servicesForGirls img,
+#haircutsForBoys img {
+  max-width: 80px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+ </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Salon Management System</h1>
+
+    <div id="loginForm" class="form-container">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="event.preventDefault(); login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">PIN:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" id="loginButton">Login</button>
+      </form>
+      <p class="error-message" id="loginErrorMessage"></p>
+    </div>
+
+    <div id="userPortal" style="display: none;">
+      <h2>User Portal</h2>
+      <button onclick="logout()">Logout</button>
+
+      <!-- Display user details, previous billing, and hairstyles -->
+      <div id="userDetails"></div>
+      <div id="previousBilling"></div>
+      <div id="hairstyles"></div>
+
+      <!-- Shopping Cart for products -->
+      <h3>Shopping Cart</h3>
+      <div id="shoppingCart"></div>
+      <button onclick="checkout()">Checkout</button>
+
+      <!-- Product Display -->
+      <h3>Products</h3>
+      <div id="productDisplay"></div>
+
+      <!-- Services Offered to Girls -->
+      <h3>Services Offered to Girls</h3>
+      <div id="servicesForGirls"></div>
+
+      <!-- Haircuts for Boys -->
+      <h3>Haircuts for Boys</h3>
+      <div id="haircutsForBoys"></div>
+
+      <!-- Employees Section -->
+      <h3>Employees</h3>
+      <div id="employees"></div>
+
+      <!-- Profile Section -->
+      <h3>Profile</h3>
+      <div id="profileDetails"></div>
+      
+      <!-- Spa Services -->
+      <h3>Spa Services</h3>
+      <div id="spaServices"></div>
+    </div>
+
+  </div>
+
+  <script >
+    document.addEventListener('DOMContentLoaded', () => {
+        const loginForm = document.getElementById('loginForm');
+        const loginButton = document.getElementById('loginButton');
+        const loginErrorMessage = document.getElementById('loginErrorMessage');
+        const userPortal = document.getElementById('userPortal');
+        const userDetails = document.getElementById('userDetails');
+        const previousBilling = document.getElementById('previousBilling');
+        const hairstyles = document.getElementById('hairstyles');
+        const shoppingCart = document.getElementById('shoppingCart');
+        const productDisplay = document.getElementById('productDisplay');
+        const servicesForGirls = document.getElementById('servicesForGirls');
+        const haircutsForBoys = document.getElementById('haircutsForBoys');
+        const employees = document.getElementById('employees');
+        const profileDetails = document.getElementById('profileDetails');
+        const spaServices = document.getElementById('spaServices');
+      
+        // Test data for James, Peter, and additional users
+        const users = [
+          { username: 'James', pin: '1111', lastHairstyle: 'Short Bob', previousHairstyles: ['Pixie Cut', 'Long Layers'], cart: [], image: null },
+          { username: 'Peter', pin: '2222', lastHairstyle: 'Crew Cut', previousHairstyles: ['Mohawk', 'Taper Fade'], cart: [], image: null },
+          { username: 'John', pin: '3333', lastHairstyle: 'Messy Bun', previousHairstyles: ['Straight Layers', 'Braided Ponytail'], cart: [], image: null },
+          { username: 'Mary', pin: '4444', lastHairstyle: 'Wavy Curls', previousHairstyles: ['Bob with Bangs', 'Updo'], cart: [], image: null },
+          { username: 'Emily', pin: '5555', lastHairstyle: 'Top Knot', previousHairstyles: ['Short Pixie', 'Fishtail Braid'], cart: [], image: null }
+        ];
+      
+        // Test data for products
+        const products = [
+          { id: 1, name: 'Shampoo', price: 10, image: 'shampoo.jpg' },
+          { id: 2, name: 'Conditioner', price: 8, image: 'conditioner.jpg' },
+          { id: 3, name: 'Hair Gel', price: 12, image: 'hair_gel.jpg' },
+          { id: 4, name: 'Hair Brush', price: 5, image: 'hair_brush.jpg' }
+        ];
+      
+        // Test data for services
+        const servicesGirls = [
+          { name: 'Manicure', price: 15, image: 'manicure.jpg' },
+          { name: 'Pedicure', price: 20, image: 'pedicure.jpg' },
+          { name: 'Facial', price: 30, image: 'facial.jpg' },
+          // Add more services for girls as needed
+        ];
+      
+        // Test data for haircuts for boys
+        const haircutsBoys = [
+          { name: 'Crew Cut', price: 15, image: 'crew_cut.jpg' },
+          { name: 'Spiky Hair', price: 18, image: 'spiky_hair.jpg' },
+          { name: 'Faded Undercut', price: 20, image: 'faded_undercut.jpg' },
+          // Add more haircuts for boys as needed
+        ];
+      
+        // Test data for employees
+        const employeesData = [
+          { name: 'Alice', profession: 'Hairstylist', image: 'employee1.jpg' },
+          { name: 'Bob', profession: 'Makeup Artist', image: 'employee2.jpg' },
+          { name: 'Catherine', profession: 'Spa Therapist', image: 'employee3.jpg' },
+          { name: 'David', profession: 'Barber', image: 'employee4.jpg' },
+          { name: 'Eva', profession: 'Nail Technician', image: 'employee5.jpg' },
+        ];
+      
+        // Event listener for the submit button
+        loginButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          login();
+        });
+      
+        // Rest of the code remains unchanged
+        // ...
+      });
+      
+  </script>
+</body>
+</html>

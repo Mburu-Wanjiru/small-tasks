@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Salon Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Salon Management System</h1>
+
+    <div id="loginForm" class="form-container">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="event.preventDefault(); login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">PIN:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" id="loginButton">Login</button>
+      </form>
+      <p class="error-message" id="loginErrorMessage"></p>
+    </div>
+
+    <div id="userPortal" style="display: none;">
+      <h2>User Portal</h2>
+      <button onclick="logout()">Logout</button>
+
+      <!-- Display user details, previous billing, and hairstyles -->
+      <div id="userDetails"></div>
+      <div id="previousBilling"></div>
+      <div id="hairstyles"></div>
+
+      <!-- Shopping Cart for products -->
+      <h3>Shopping Cart</h3>
+      <div id="shoppingCart"></div>
+      <button onclick="checkout()">Checkout</button>
+
+      <!-- Product Display -->
+      <h3>Products</h3>
+      <div id="productDisplay"></div>
+
+      <!-- Spa Services -->
+      <h3>Spa Services</h3>
+      <div id="spaServices"></div>
+
+      <!-- Services for Girls -->
+      <h3>Services for Girls</h3>
+      <div id="girlServices"></div>
+
+      <!-- Haircuts for Boys -->
+      <h3>Haircuts for Boys</h3>
+      <div id="boyHaircuts"></div>
+
+      <!-- Image Upload Section -->
+      <h3>Image Upload</h3>
+      <input type="file" accept="image/*" id="imageUpload" onchange="displayImage()">
+      <img id="uploadedImage" alt="User Image" style="max-width: 200px; margin-top: 10px;">
+
+      <!-- Employee Section -->
+      <h3>Employees</h3>
+      <div id="employees"></div>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#employees">Employees</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#spaServices">Spa Services</a></li>
+          <li><a href="#girlServices">Services for Girls</a></li>
+          <li><a href="#boyHaircuts">Haircuts for Boys</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,42 +1,107 @@
-/* Add the following styles for products */
-.product {
-    text-align: center;
-    margin: 10px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #fff;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Improved styling for the login form and user portal */
+.form-container, #userPortal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginButton, button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loginButton:hover, button:hover {
+  background-color: #2980b9;
+}
+
+/* Styling for the navigation bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #333;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Improved styling for the service sections */
+.service {
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.service-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Styling for the user details and image upload section */
+#userDetails, #previousBilling, #hairstyles, #shoppingCart, #employees {
+  margin-top: 20px;
+}
+
+/* Styling for the logout button */
+button {
+  background-color: #e74c3c;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
   }
-  
-  .product-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
+
+  nav li {
+    flex: none;
   }
-  
-  /* Add the following styles for the shopping cart */
-  #shoppingCart {
-    margin-top: 10px;
-  }
-  
-  /* Add the following styles for the employee section */
-  .employee {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .employee-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
-  
-  /* Add the following styles for the image upload section */
-  #imageUpload {
-    margin-top: 10px;
-  }
-  
+}
