@@ -26,47 +26,47 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Test data for products
     const products = [
-      { id: 1, name: 'Shampoo', price: 10, image: 'shampoo.jpg' },
-      { id: 2, name: 'Conditioner', price: 8, image: 'conditioner.jpg' },
-      { id: 3, name: 'Hair Gel', price: 12, image: 'hair_gel.jpg' },
-      { id: 4, name: 'Hair Brush', price: 5, image: 'hair_brush.jpg' }
+      { id: 1, name: 'Shampoo', price: 10, image: 'image/shampoo.jpg' },
+      { id: 2, name: 'Conditioner', price: 8, image: 'image/conditioner.jpg' },
+      { id: 3, name: 'Hair Gel', price: 12, image: 'image/hair_gel.jpg' },
+      { id: 4, name: 'Hair Brush', price: 5, image: 'image/hair_brush.jpg' }
       // Add more products as needed
     ];
   
     // Test data for spa services
     const spaServicesData = [
-      { name: 'Relaxation Massage', price: 50, image: 'spa1.jpg' },
-      { name: 'Facial Treatment', price: 30, image: 'spa2.jpg' },
-      { name: 'Hot Stone Massage', price: 60, image: 'spa3.jpg' },
-      { name: 'Manicure', price: 20, image: 'spa4.jpg' }
+      { name: 'Relaxation Massage', price: 50, image: 'image/spa1.jpg' },
+      { name: 'Facial Treatment', price: 30, image: 'image/spa2.jpg' },
+      { name: 'Hot Stone Massage', price: 60, image: 'image/spa3.jpg' },
+      { name: 'Manicure', price: 20, image: 'image/spa4.jpg' }
       // Add more spa services as needed
     ];
   
     // Test data for services for girls
     const girlServicesData = [
-      { name: 'Princess Braids', price: 25, image: 'girl1.jpg' },
-      { name: 'Sparkle Manicure', price: 15, image: 'girl2.jpg' },
-      { name: 'Fairy Tale Makeup', price: 30, image: 'girl3.jpg' },
-      { name: 'Glitter Tattoos', price: 10, image: 'girl4.jpg' }
+      { name: 'Princess Braids', price: 25, image: 'image/girl1.jpg' },
+      { name: 'Sparkle Manicure', price: 15, image: 'image/girl2.jpg' },
+      { name: 'Fairy Tale Makeup', price: 30, image: 'image/girl3.jpg' },
+      { name: 'Glitter Tattoos', price: 10, image: 'image/girl4.jpg' }
       // Add more services for girls as needed
     ];
   
     // Test data for haircuts for boys
     const boyHaircutsData = [
-      { name: 'Classic Crew Cut', price: 15, image: 'boy1.jpg' },
-      { name: 'Spiky Top Fade', price: 20, image: 'boy2.jpg' },
-      { name: 'Side Part Pompadour', price: 18, image: 'boy3.jpg' },
-      { name: 'Mohawk Fade', price: 25, image: 'boy4.jpg' }
+      { name: 'Classic Crew Cut', price: 15, image: 'image/boy1.jpg' },
+      { name: 'Spiky Top Fade', price: 20, image: 'image/boy2.jpg' },
+      { name: 'Side Part Pompadour', price: 18, image: 'image/boy3.jpg' },
+      { name: 'Mohawk Fade', price: 25, image: 'image/boy4.jpg' }
       // Add more haircuts for boys as needed
     ];
   
     // Test data for employees
     const employeeData = [
-      { name: 'Alice', profession: 'Hairstylist', image: 'employee1.jpg' },
-      { name: 'Bob', profession: 'Makeup Artist', image: 'employee2.jpg' },
-      { name: 'Eva', profession: 'Spa Therapist', image: 'employee3.jpg' },
-      { name: 'David', profession: 'Barber', image: 'employee4.jpg' },
-      { name: 'Grace', profession: 'Nail Technician', image: 'employee5.jpg' }
+      { name: 'Alice', profession: 'Hairstylist', image: 'image/employee1.jpg' },
+      { name: 'Bob', profession: 'Makeup Artist', image: 'image/employee2.jpg' },
+      { name: 'Eva', profession: 'Spa Therapist', image: 'image/employee3.jpg' },
+      { name: 'David', profession: 'Barber', image: 'image/employee4.jpg' },
+      { name: 'Grace', profession: 'Nail Technician', image: 'image/employee5.jpg' }
       // Add more employees as needed
     ];
   
