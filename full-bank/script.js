@@ -7,110 +7,139 @@
 /////////////////////////////////////////////////
 // Data
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'James Mburu Wanjiru',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
-  interestRate: 1.2, // %
+  interestRate: 1.1, // %
   pin: 1111,
 };
 
 const account2 = {
-  owner: 'Jessica Davis',
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-  interestRate: 1.5,
+  owner: 'James Mburu Mbugua',
+  movements: [52642186248,7895624,632541,-874566,9541238,-457894,-314697,58646248],
+  interestRate: 1.2,
   pin: 2222,
 };
 
 const account3 = {
-  owner: 'Steven Thomas Williams',
-  movements: [200, -200, 340, -300, -20, 50, 400, -460],
-  interestRate: 0.7,
+  owner: 'Grace wamaitha Mburu',
+  movements: [30000000, -300000, 30000000, -30000, -300000, 3000000, 30000, -300000],
+  interestRate: 0.3,
   pin: 3333,
 };
 
 const account4 = {
-  owner: 'Sarah Smith',
-  movements: [430, 1000, 700, 50, 90],
-  interestRate: 1,
+  owner: 'Moses Mbugua Wanjiru',
+  movements:[4000000, -400000, 4000000, -40000, -400000, 4000000, 40000, -400000],
+  interestRate: 0.4,
   pin: 4444,
 };
 
 const account5 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Peter Kimani Wanjiru',
+    movements: [150000, -150000, 1500000, -1500, -15000, 1500000, 15000, -150000],
+    interestRate: 0.5,
+    pin: 5555,
   };
 
   const account6 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Teresiah Wanjiru Mburu',
+    movements: [6000000, -1=600000, 60000000, -60000, -60000, 6000000, 60000, -600000],
+    interestRate: 0.6,
+    pin: 6666,
   };
 
   const account7 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
+    owner: 'Mary Njeri Mburu',
+    movements: [7000000, -700000, 7000000, -70000, -70000, 7000000, 70000, -700000],
     interestRate: 0.7,
-    pin: 3333,
+    pin: 7777,
   };
   
   const account8 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Peninah Wambui Gicharu',
+    movements: [8000000, -800000, 8000000, -8000, -80000, 80000000, 80000, -8000000],
+    interestRate: 0.8,
+    pin: 8888,
   };
 
   const account9 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Stecy Wanjiru Gicharu',
+    movements: [9000000, -900000, 9000000, -9000, -90000, 9000000, 90000, -900000],
+    interestRate: 0.9,
+    pin: 9999,
   };
 
   const account10 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Hamphrey Wagashiu Gicharu',
+    movements: [1000000, -100000, 1000000, -1000, -10000, 1000000, 10000, -100000],
+    interestRate: 1.0,
+    pin: 1010,
   };
 
   const account11 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Ryan Mburu Gicharu',
+    movements: [11000000, -110000, 1100000, -11000, -11000, 1100000, 11000, -110000],
+    interestRate: 1.1,
+    pin: 1111,
   };
 
   const account12 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Peter Gitau Wanyoike',
+    movements: [120000, -120000, 1200000, -1200, -12000, 1200000, 12000, -120000],
+    interestRate: 1.2,
+    pin: 1212,
   };
 
   const account13 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Grace Wamaitha Wanyoike',
+    movements: [1300000, -130000, 1300000, -1300, -130000, 1300000, 13000, -130000],
+    interestRate: 1.3,
+    pin: 1313,
   };
 
   const account14 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Moses Mbugua Mburu',
+    movements: [140000, -140000, 1400000, -1400, -14000, 1400000, 14000, -140000],
+    interestRate: 1.4,
+    pin: 1414,
   };
 
   const account15 = {
-    owner: 'Steven Thomas Williams',
-    movements: [200, -200, 340, -300, -20, 50, 400, -460],
-    interestRate: 0.7,
-    pin: 3333,
+    owner: 'Grace Wamaitha Mbugua',
+    movements: [150000, -150000, 1500000, -1500, -15000, 1500000, 15000, -150000],
+    interestRate: 1.5,
+    pin: 1515,
   };
-const accounts = [account1, account2, account3, account4];
+
+  const account16 = {
+    owner: 'Treshia Njeri Wamaitha',
+    movements: [160000, -160000, 1600000, -160000, -16000, 16000, 160000, -16000],
+    interestRate: 1.6,
+    pin: 1616,
+  };
+
+  const account17 = {
+    owner: 'Thami Wamaitha',
+    movements: [170000, -170000, 17000, -17000, -17000, 17000, 170000, -17000],
+    interestRate: 1.7,
+    pin: 1717,
+  };
+
+  const account18 = {
+    owner: 'Peter Gicharu Wagashiu',
+    movements: [20000, -20000, 34000, -30000, -2000, 50000, 400000, -460000],
+    interestRate: 1.8,
+    pin: 1818,
+  };
+
+  const account19 = {
+    owner: 'Bernad Wanyoike Kamungi',
+    movements: [190000, -190000, 19000, -190000, -19000, 50000, 40000, -86000],
+    interestRate: 1.9,
+    pin: 1919,
+  };
+const accounts = [account1, account2, account3, account4,account5account6,account7,account8,account9,
+    account10,account11,account12,account13,account14,account15,account16,account17,account18,account19];
 
 /////////////////////////////////////////////////
 // Elements
