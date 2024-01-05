@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            lesson 9e
+        </title>
+    </head>
+
+    <body>
+        <input placeholder="Name" onkeydown="
+            handleNameOnKeyDown();
+            ">
+        
+        <button
+        onclick="
+        displayName();
+        ">Submit</button>
+
+        <p></p>
+        
+
+        <script>
+            function displayName() {
+                const name = document.querySelector('input').value
+                document.querySelector('p')
+                .innerHTML = `Your name is ${name}`
+            }
+
+            function handleNameOnKeyDown() {
+                if (event.key === 'Enter') {
+                    displayName();
+            };
+            }
+        </script>
+    </body>
+</html>

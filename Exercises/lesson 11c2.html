@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            lessonb2
+        </title>
+    </head>
+
+
+    <body>
+
+        
+        <script>
+            function swapArray(array) {
+                const lastIndex = array.length - 1;
+
+                const firstValue = array[0];
+                const lastValue = array[lastIndex];
+
+                array[0] = lastValue;
+                array[lastIndex] = firstValue;
+                return array;
+            }
+            console.log(swapArray([1, 20, 22, 24, 5]));
+            console.log(swapArray(['hi', 'hello', 'hey']));
+
+        </script>
+    </body>
+</html>

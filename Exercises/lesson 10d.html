@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lesson 10d</title>
+
+
+        <style>
+            .gaming-button{
+                background-color: lightgrey;
+                border-radius: 3px;
+                padding: 5px;
+                border-style: none;
+                cursor: pointer;
+            }
+            .toggled-gaming-button{
+                background-color: black;
+                color: white;
+            }
+        </style>
+
+
+
+        <title>
+            lesson 10c
+        </title>
+    </head>
+    <body>
+        <button class="gaming-button js-gaming-button">Gaming</button>
+
+
+
+
+        <script>
+            let isToggled = false;
+
+
+            document.querySelector('.js-gaming-button').addEventListener('click', () => {
+                if(isToggled === false) {
+                    document.querySelector('.js-gaming-button').classList.add('toggled-gaming-button');
+                    isToggled = true;
+                } else if (isToggled === true) {
+                    document.querySelector('.js-gaming-button').classList.remove('toggled-gaming-button');
+                    isToggled = false;
+                }
+
+            })
+        </script>
+    </body>
+</html>

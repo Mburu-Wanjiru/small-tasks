@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lesson 10e</title>
+
+
+        <style>
+            .gaming-button, .music-button, .tech-button{
+                background-color: lightgrey;
+                border-radius: 3px;
+                padding: 5px;
+                border-style: none;
+                cursor: pointer;
+            }
+            .toggled-gaming-button, .toggled-music-button, .toggled-tech-button{
+                background-color: black;
+                color: white;
+            }
+        </style>
+
+
+
+        <title>
+            lesson 10c
+        </title>
+    </head>
+    <body>
+        <button class="gaming-button js-gaming-button">Gaming</button>
+
+        <button class="music-button js-music-button">Music</button>
+        <button class="tech-button js-tech-button">Tech</button>
+
+
+
+
+        <script>
+            let isToggled = false;
+
+            document.querySelector('.js-gaming-button').addEventListener('click', changeButtonStyle('js-gaming-button', 'toggled-gaming-button'));
+
+            document.querySelector('.js-music-button').addEventListener('click', changeButtonStyle('js-music-button', 'toggled-music-button'));
+
+            document.querySelector('.js-tech-button').addEventListener('click', changeButtonStyle('js-tech-button', 'toggled-tech-button'));
+
+
+            function changeButtonStyle (jsButtonName, toggledButtonName) {
+                document.querySelector(`.${jsButtonName}`).addEventListener('click', () => {
+                if(isToggled === false) {
+                    document.querySelector(`.${jsButtonName}`).classList.add(`${toggledButtonName}`);
+                    isToggled = true;
+                } else if (isToggled === true) {
+                    document.querySelector(`.${jsButtonName}`).classList.remove(`${toggledButtonName}`);
+                    isToggled = false;
+                }
+
+            })
+            }
+        </script>
+    </body>
+</html>
