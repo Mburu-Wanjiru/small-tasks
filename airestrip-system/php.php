@@ -11,6 +11,7 @@ class Runway {
         $this->width = $width;
     }
 
+    
     public function displayDetails() {
         echo "Runway $this->id - Length: $this->length, Width: $this->width<br>";
     }
